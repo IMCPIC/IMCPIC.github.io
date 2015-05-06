@@ -1,7 +1,7 @@
 $(document).ready(getposts);
 function getposts(){
-    $.getJSON('entries.json', function(data) {
-		/*$.each(data.entries, function(key, val) {
+    /*$.getJSON('entries.json', function(data) {
+		$.each(data.entries, function(key, val) {
                 var output="<ul id='"+key+"'>";
 				    output+="<li>" + val.date +"</li>";
 				    output+="<li>" + val.title +"</li>";
@@ -9,6 +9,6 @@ function getposts(){
 
 				output+="</ul>";
 				$("#blog").html(output);
-      	});*/
-    });
+      	});
+    });*/
 }
