@@ -48,7 +48,7 @@ function post(){
         var title = $("input#h").val();
         var text = $("textarea#c").val();
         text = $("textarea#c").val().replace(/\n/g, "&lt;br&gt;");
-        var added = '{"t":"' + date + '", "h":"' + title + '", "c":"' + text + '"}';
+        var added = '{"date":"' + date + '", "title":"' + title + '", "text":"' + text + '"}';
         $("#json").append(added);
         $("#json").append('<br />]}');
       }
