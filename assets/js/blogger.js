@@ -3,9 +3,9 @@ function getposts(){
     $.getJSON('entries.json', function(data) {
 		$.each(data.entries, function(key, val) {
                 var output="<ul id='"+key+"'>";
-				    output+="<li>" + val.date +"</li>";
-				    output+="<li>" + val.title +"</li>";
-				    output+="<li>" + val.text +"</li>";
+				    output+="<p class='muted' style='float:right;'>" + val.date +"</p>";
+				    output+="<h5>" + val.title +"</h5>";
+				    output+="<p>" + val.text +"</p>";
 					output+="</ul>";
 
 				$("#key").html(output);
