@@ -8,7 +8,7 @@ function getposts(){
 				    output+="<p>" + val.text +"</p>";
 					output+="</ul>";
 
-				$("#key").html(output);
+				$.each("#key").html(output);
       	});
     });
 }
