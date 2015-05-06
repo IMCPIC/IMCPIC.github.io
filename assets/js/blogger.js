@@ -1,6 +1,6 @@
 $(document).ready(getposts);
 function getposts(){
-    $.getJSON.reverse(('entries.json', function(data)) {
+    $.getJSON('entries.json', function(data) {
 		$.each(data.entries, function(key, val) {
                 var output="<div id='key' class='col-sm-12 blogpost'>";
 				    output+="<small><p class='muted' style='float:right;'>" + val.date +"</p></small>";
