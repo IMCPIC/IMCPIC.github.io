@@ -6,9 +6,9 @@ function getposts(){
 				    output+="<li>" + val.date +"</li>";
 				    output+="<li>" + val.title +"</li>";
 				    output+="<li>" + val.text +"</li>";
-
 				output+="</ul>";
-				$("#blog").html(output);
+
+				$("#key").html(output);
       	});
     });
 }
