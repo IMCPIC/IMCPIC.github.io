@@ -9,7 +9,7 @@ function getposts(){
 				    output+="</hr>";
 					output+="</div>";
 //
-				$("#blog").append(output);
+				$("#blog").reverse.append(output);
       	});
     });
 }
