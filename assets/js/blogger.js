@@ -15,3 +15,7 @@ function getposts(){
       	});
     });
 }
+
+function getselection(){
+	
+}
