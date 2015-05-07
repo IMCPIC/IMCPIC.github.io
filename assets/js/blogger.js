@@ -13,3 +13,16 @@ function getposts(){
       	});
     });
 }
+
+$(document).ready(function()    {
+	$('#blog').paginate({itemsPerPage: 5});
+
+	$.getJSON('data.json', function(data) {
+		var items = [];
+		$.each(data.items, function(i, item) {
+			items.push('<li>' + item + '</li>');
+		});
+		$('#example4').append(items.join(''));
+		$('#example4').paginate({itemsPerPage: 10});
+	});
+});
