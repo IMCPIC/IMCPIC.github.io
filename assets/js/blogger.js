@@ -27,7 +27,7 @@ $('#search2').keyup(function () {
    var output = '<ul class="searchresults">';
  
    $.each(data.entries, function(key, val) {
-      if (val.text.search(myExp) !== -1) {
+      if (val.entries.search(myExp) !== -1) {
       console.log(val);
       found = 1;
       output += '<br>';
