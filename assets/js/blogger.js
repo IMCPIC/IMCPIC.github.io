@@ -16,7 +16,7 @@ function getposts(){
     });
 }
 
-$(document).ready(function() {
+$('#search2').keyup(function () {
     $("#search2").blur(function(e){
        $("#search1").val($(this).val());
     });
