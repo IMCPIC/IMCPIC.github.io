@@ -52,17 +52,20 @@ $('#search2').keyup(function () {
       if (found==1) {
       $('#update').removeClass('update-hidden');
       $('#searchhide').addClass('searchhide-hidden');
+      $('#searchhide2').addClass('searchhide-hidden');
       $('#update').html(output);
       $('#searchresults').paginate({itemsPerPage: 4});
       }
       else {
           $('#update').addClass('update-hidden');
           $('#searchhide').removeClass('searchhide-hidden');
+          $('#searchhide2').removeClass('searchhide-hidden');
       }
  	 
 });
     } else {
       $('#update').addClass('update-hidden');
       $('#searchhide').removeClass('searchhide-hidden');
+      $('#searchhide2').removeClass('searchhide-hidden');
     }
 });
