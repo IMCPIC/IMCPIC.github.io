@@ -11,8 +11,8 @@ function getposts(){
 					output+="</div>";
 
 				$("#blog").append(output);
-				$('#key').append(items.join(''));
-				$('#key').paginate({itemsPerPage: 5});
+				
+				$('#blog').paginate({itemsPerPage: 5});
       	});
     });
 }
