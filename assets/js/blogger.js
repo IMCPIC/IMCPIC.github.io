@@ -26,7 +26,7 @@ $('#search2').keyup(function () {
    $.getJSON('entries.json', function (data) {
    var output = '<ul class="searchresults">';
  
-   $.each(data, function(key, val) {
+   $.each(data.entries, function(key, val) {
       if (val.title.search(myExp) !== -1) {
       console.log(val);
       found = 1;
