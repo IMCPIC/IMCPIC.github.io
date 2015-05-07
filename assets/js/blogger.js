@@ -41,14 +41,14 @@ $('#search2').keyup(function () {
 
       output += '<div id="update-pagination" style="float:right;">';
 	  output += '<a id="update-previous" href="#">&laquo; Newer</a>';
-	  output += '|';
+	  output += ' | ';
 	  output += '<a id="update-next" href="#">Older &raquo;</a>';
       output += '</div>';
       output += '<br>';
 
       if (found==1) {
       $('#update').removeClass('update-hidden');
-      $('#update').html(output);
+      $('#update').append(output);
       $('#update').paginate({itemsPerPage: 4});
       }
       else {
