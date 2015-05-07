@@ -16,7 +16,13 @@ function getposts(){
     });
 }
 
-$('#search2').keyup(function () { 
+$(document).ready(function() {
+    $("#search2").blur(function(e){
+       $("#search1").val($(this).val());
+    });
+});
+
+/*$('#search2').keyup(function () { 
     var searchField = $('#search2').val();
     if (searchField.length){        
     var myExp = new RegExp(searchField, "i");
@@ -67,7 +73,7 @@ $('#search2').keyup(function () {
       $('#searchhide').removeClass('searchhide-hidden');
       $('#searchhide2').removeClass('searchhide-hidden');
     }
-});
+});*/
 
 
 
