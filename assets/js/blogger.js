@@ -23,35 +23,33 @@ $('#search2').keyup(function () {
     var found = 0;
  
    $.getJSON('entries.json', function (data) {
-   
+   var output = '<ul class="searchresults" id="searchresults">';
  	   
    $.each(data.entries, function(key, val) {
       if (val.text.search(myExp) !== -1 || val.title.search(myExp) !== -1) {
       console.log(val);
       found = 1;
-      var output = '<div class="searchresults">';
-	      output += '<br>';
-	      
-	      output += '<h5>' + val.date + '</h5>';
-	      output += '<h4>' + val.title + '</h4>';
-	      output += '<p>' + val.text + '</p>';
-	      
-	      output += '</div>';
+      output += '<br>';
+      output += '<li>';
+      output += '<h5>' + val.date + '</h5>';
+      output += '<h4>' + val.title + '</h4>';
+      output += '<p>' + val.text + '</p>';
+      output += '</li>';
       }
    });
-      
+      output += '</ul>';
 
-      output += '<div id="update-pagination" style="float:right;">';
-	  output += '<a id="update-previous" href="#">&laquo; Newer</a>';
+      output += '<div id="searchresults-pagination" style="float:right;">';
+	  output += '<a id="searchresults-previous" href="#">&laquo; Newer</a>';
 	  output += ' | ';
-	  output += '<a id="update-next" href="#">Older &raquo;</a>';
+	  output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
       output += '</div>';
       output += '<br>';
 
       if (found==1) {
       $('#update').removeClass('update-hidden');
       $('#update').html(output);
-      $('#update').paginate({itemsPerPage: 4});
+      $('#searchresults').paginate({itemsPerPage: 4});
       }
       else {
           $('#update').addClass('update-hidden');
