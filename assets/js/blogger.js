@@ -27,11 +27,12 @@ $('#search2').keyup(function () {
    var output = '<ul class="searchresults">';
  
    $.each(data.entries, function(key, val) {
-      if (val.title.search(myExp) !== -1) {
+      if (val.search(myExp) !== -1) {
       console.log(val);
       found = 1;
       output += '<li>';
-      output += '<h2>' + val.title + '</h2>';
+      output += '<h4>' + val.date + '</h2>';
+      output += '<h4>' + val.title + '</h2>';
       output += '</li>';
       } 
    });
