@@ -32,8 +32,8 @@ $('#search2').keyup(function () {
       found = 1;
       output += '<br>';
       output += '<li>';
-      output += '<h4>' + val.date + '</h4>';
-      output += '<h5>' + val.title + '</h5>';
+      output += '<h5>' + val.date + '</h5>';
+      output += '<h4>' + val.title + '</h4>';
       output += '<p>' + val.text + '</p>';
       output += '</li>';
       } 
