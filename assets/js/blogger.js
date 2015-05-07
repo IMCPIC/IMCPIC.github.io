@@ -39,7 +39,7 @@ $('#search2').keyup(function () {
    });
       output += '</ul>';
 
-      output += '<div id="searchresults-pagination" style="float:right;">';
+      output += '<div id="searchresults-pagination" class="update" style="float:right;">';
 	  output += '<a id="searchresults-previous" href="#">&laquo; Newer</a>';
 	  output += ' | ';
 	  output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
