@@ -1,7 +1,7 @@
 $(document).ready(getposts);
-
+$('#key').paginate({itemsPerPage: 5});
 function getposts(){
-	$('#key').paginate({itemsPerPage: 5});
+	
     $.getJSON('entries.json', function(data) {
 		$.each(data.entries, function(key, val) {
                 var output="<div id='key' class='col-sm-12 blogpost'>";
