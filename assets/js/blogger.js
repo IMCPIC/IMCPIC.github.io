@@ -33,7 +33,7 @@ $('#search2').keyup(function () {
       output += '</div>'
       output += '<ul class="searchresults" id="searchresults">';
  	   
-   $.each(data.entries, function(key, val) {
+   $.each(data.entries.reverse(), function(key, val) {
       if (val.text.search(myExp) !== -1 || val.title.search(myExp) !== -1) {
       console.log(val);
       found = 1;
