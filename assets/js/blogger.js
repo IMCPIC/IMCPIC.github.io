@@ -52,4 +52,3 @@ $('#search2').keyup(function () {
       $('#update').addClass('update-hidden');
     }
 });
-$('#update').paginate({itemsPerPage: 2});
