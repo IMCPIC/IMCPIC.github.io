@@ -27,7 +27,7 @@ $('#search2').keyup(function() {//when key is pressed in search bar
   $.each(data.entries, function(key, val){
    if(val.title.search(myExp) != -1){//search for the data in the json file
     output += '<li>';
-    output += '<h3>' +val.date+ '</h3>';
+    output += '<h3>' +val.title+ '</h3>';
     output += '</li>';
    }
   });//end each
