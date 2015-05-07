@@ -1,4 +1,5 @@
 $(document).ready(getposts);
+$('#key').paginate({itemsPerPage: 5});
 function getposts(){
     $.getJSON('entries.json', function(data) {
 		$.each(data.entries, function(key, val) {
@@ -13,16 +14,3 @@ function getposts(){
       	});
     });
 }
-
-$(document).ready(function()    {
-	$('#key').paginate({itemsPerPage: 5});
-
-	$.getJSON('data.json', function(data) {
-		var items = [];
-		$.each(data.items, function(i, item) {
-			items.push('<li>' + item + '</li>');
-		});
-		$('#example4').append(items.join(''));
-		$('#example4').paginate({itemsPerPage: 10});
-	});
-});
