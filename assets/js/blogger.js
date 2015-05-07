@@ -2,7 +2,7 @@ $(document).ready(getposts);
 function getposts(){
 	
     $.getJSON('entries.json', function(data) {
-		$.each(data.entries, function(key, val) {
+		$reverse.each(data.entries, function(key, val) {
                 var output="<div id='key' class='col-sm-12 blogpost'>";
 				    output+="<small><p class='muted' style='float:right;'>" + val.date +"</p></small>";
 				    output+="<h5>" + val.title +"</h5>";
