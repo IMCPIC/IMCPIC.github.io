@@ -18,8 +18,8 @@ function getposts(){
 
 
 $(window).load(function(){
-        $('#search2').keyup(function(){
-            var searchField = $('#search2').val();
+        $('#search').keyup(function(){
+            var searchField = $('#search').val();
             var regex = new RegExp(searchField, "i");
             var output = '<div class="row">';
             var count = 1;
