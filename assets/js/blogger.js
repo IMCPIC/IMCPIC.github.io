@@ -43,6 +43,7 @@ $('#search2').keyup(function () {
 	  output += '<a id="searchresults-previous" href="#">&laquo; Newer</a>';
 	  output += ' | ';
 	  output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
+      output += '</hr>';
       output += '</div>';
       output += '<br>';
 
