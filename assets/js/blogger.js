@@ -16,7 +16,7 @@ function getposts(){
     });
 }
 
-
+$(document).ready();
 $('#search2').keyup(function() {//when key is pressed in search bar
  var searchTerm = $(this).val(); //val of search bar
  var myExp = new RegExp(searchTerm, "i"); //regular experation
@@ -25,9 +25,9 @@ $('#search2').keyup(function() {//when key is pressed in search bar
 
   var output = "<ul id='result'>";
   $.each(data, function(key, val){
-   if(val.title.search(myExp) != -1){//search for the data in the json file
+   if(val.date.search(myExp) != -1){//search for the data in the json file
     output += '<li>';
-    output += '<h3>' +val.title+ '</h3>';
+    output += '<h3>' +val.date+ '</h3>';
     output += '</li>';
    }
   });//end each
