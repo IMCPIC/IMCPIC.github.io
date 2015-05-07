@@ -12,7 +12,7 @@ function getposts(){
 
 				$("#blog").append(output);
 				
-				$('#blog').paginate({itemsPerPage: 5});
+				$('#blog').paginate({itemsPerPage: 2});
       	});
     });
 }
