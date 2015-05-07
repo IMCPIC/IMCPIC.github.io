@@ -76,7 +76,7 @@ $.fn.paginate = function(options) {
         
         var show = function(page) {
             currentPage = page;
-            startPage = (currentPage - 1) * options.itemsPerPage;
+            startPage = (currentPage) * options.itemsPerPage;
             endPage = startPage + options.itemsPerPage;
             self.children().hide().slice(startPage, endPage).show();
 
