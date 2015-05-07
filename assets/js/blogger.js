@@ -44,7 +44,7 @@ $('#search2').keyup(function () {
 	  output += ' | ';
 	  output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
       output += '</div>';
-      output += '<div class="row">';
+      output += '<div class="row" style="float:right:">';
       output += 'hello';
       output += '</div>'
 
