@@ -51,7 +51,7 @@ $('#search2').keyup(function () {
 
       if (found==1) {
       $('#update').removeClass('update-hidden');
-      $('#searchhide').addClass('searchhide-hide');
+      $('#searchhide').addClass('searchhide-hidden');
       $('#update').html(output);
       $('#searchresults').paginate({itemsPerPage: 4});
       }
