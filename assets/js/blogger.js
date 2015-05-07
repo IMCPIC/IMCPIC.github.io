@@ -18,8 +18,7 @@ function getposts(){
 //
 $('#search2').keyup(function () { 
     var searchField = $('#search2').val();
-    if (searchField.length)
-    {        
+    if (searchField.length){        
     var myExp = new RegExp(searchField, "i");
     var found = 0;
  
@@ -40,21 +39,21 @@ $('#search2').keyup(function () {
    });
       output += '</ul>';
 
-      output += '<div id="searchresults-pagination" style="float:right;">';
-	  output += '<a id="searchresults-previous" href="#">&laquo; Newer</a>';
+      output += '<div id="update-pagination" style="float:right;">';
+	  output += '<a id="update-previous" href="#">&laquo; Newer</a>';
 	  output += '|';
-	  output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
+	  output += '<a id="update-next" href="#">Older &raquo;</a>';
       output += '</div>';
 
       if (found==1) {
       $('#update').removeClass('update-hidden');
       $('#update').html(output);
-      $('#searchresults').paginate({itemsPerPage: 4});
+      
       }
       else {
           $('#update').addClass('update-hidden');
       }
- 	 
+ 	 $('#update').paginate({itemsPerPage: 4});
 });
     } else {
       $('#update').addClass('update-hidden');
