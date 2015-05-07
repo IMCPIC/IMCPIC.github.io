@@ -45,7 +45,7 @@ $('#search2').keyup(function () {
 	  output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
       output += '</div>';
       output += '<div class="col-sm-12" style="float:right;">';
-      output += '</hr>';
+      output += '<p></hr></p>';
       output += '</div>'
 
       if (found==1) {
