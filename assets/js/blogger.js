@@ -16,12 +16,25 @@ function getposts(){
     });
 }
 
-$('#search2').keydown(function () {
+$(document).ready(function() {
+            
+            //set focus to 1st input field
+            $("search2").focus();
+            
+            //attach click event to button
+            $("#search2").keydown(function(){
+                $("#search1").focus();
+            });
+            
+
+        });
+
+/*$('#search2').keydown(function () {
     $("#search2").blur(function(e){
        $("#search1").val($(this).val());
     });
-});
-//
+});*/
+
 /*$('#search2').keyup(function () { 
     var searchField = $('#search2').val();
     if (searchField.length){        
