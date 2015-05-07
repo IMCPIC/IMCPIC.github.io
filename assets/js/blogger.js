@@ -15,7 +15,7 @@ function getposts(){
       	});
     });
 }
-//
+
 $('#search2').keyup(function () { 
     var searchField = $('#search2').val();
     if (searchField.length){        
