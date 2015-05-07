@@ -24,8 +24,8 @@ $('#search2').keyup(function() {//when key is pressed in search bar
  $.getJSON('entries.json', function(data){//get the json file
 
   var output = "<ul id='result'>";
-  $.each(data, function(key, val){
-   if(val.date.search(myExp) != -1){//search for the data in the json file
+  $.each(data.entries, function(key, val){
+   if(val.title.search(myExp) != -1){//search for the data in the json file
     output += '<li>';
     output += '<h3>' +val.date+ '</h3>';
     output += '</li>';
