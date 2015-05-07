@@ -36,15 +36,15 @@ $('#search2').keyup(function () {
       output += '<h4>' + val.title + '</h4>';
       output += '<p>' + val.text + '</p>';
       output += '</li>';
+      }
+   });
+      output += '</ul>';
       output += '<div id="update-pagination" style="float:right;">';
 	  output += '<a id="update-previous" href="#">&laquo; Newer</a>';
 	  output += '|';
 	  output += '<a id="update-next" href="#">Older &raquo;</a>';
       output += '</div>';
-      } 
-      $('#update').paginate({itemsPerPage: 2});
-   });
-      output += '</ul>';
+      $('#update').paginate({itemsPerPage: 4});
       if (found==1) {
       $('#update').removeClass('update-hidden');
       $('#update').html(output);
