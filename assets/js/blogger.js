@@ -36,6 +36,7 @@ $('#search2').keyup(function () {
       output += '<h4>' + val.title + '</h4>';
       output += '<p>' + val.text + '</p>';
       output += '</li>';
+      $('#update').paginate({itemsPerPage: 4});
       }
    });
       output += '</ul>';
@@ -52,7 +53,7 @@ $('#search2').keyup(function () {
       else {
           $('#update').addClass('update-hidden');
       }
- 	  $('#update').paginate({itemsPerPage: 4});
+ 	 
 });
     } else {
       $('#update').addClass('update-hidden');
