@@ -1,5 +1,4 @@
 $(document).ready(getposts);
-$('#key').paginate({itemsPerPage: 5});
 function getposts(){
 	
     $.getJSON('entries.json', function(data) {
@@ -12,6 +11,8 @@ function getposts(){
 					output+="</div>";
 
 				$("#blog").append(output);
+				$('#key').append(items.join(''));
+				$('#key').paginate({itemsPerPage: 5});
       	});
     });
 }
