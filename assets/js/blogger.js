@@ -57,10 +57,12 @@ $('#search2').keyup(function () {
       }
       else {
           $('#update').addClass('update-hidden');
+          $('#searchhide').removeClass('searchhide-hidden');
       }
  	 
 });
     } else {
       $('#update').addClass('update-hidden');
+      $('#searchhide').removeClass('searchhide-hidden');
     }
 });
