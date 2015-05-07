@@ -15,7 +15,7 @@ function getposts(){
 }
 
 $(document).ready(function()    {
-	$('#blog').paginate({itemsPerPage: 5});
+	$('#key').paginate({itemsPerPage: 5});
 
 	$.getJSON('data.json', function(data) {
 		var items = [];
