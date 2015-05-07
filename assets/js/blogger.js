@@ -31,8 +31,8 @@ $('#search2').keyup(function () {
       console.log(val);
       found = 1;
       output += '<li>';
-      output += '<h4>' + val.date + '</h2>';
-      output += '<h4>' + val.title + '</h2>';
+      output += '<h4>' + val.date + '</h4>';
+      output += '<h4>' + val.title + '</h4>';
       output += '</li>';
       } 
    });
