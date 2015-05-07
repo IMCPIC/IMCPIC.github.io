@@ -15,7 +15,7 @@ function getposts(){
       	});
     });
 }
-
+//
 $(document).ready(function() {
             
             //set focus to 1st input field
