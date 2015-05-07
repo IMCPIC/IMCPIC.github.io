@@ -11,7 +11,7 @@ function getposts(){
 					output+="</div>";
 
 				$("#blog").append(output);
-				$('#blog').paginate({itemsPerPage: 1});
+				$('#blog').paginate({itemsPerPage: 2});
       	});
     });
 }
