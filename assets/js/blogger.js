@@ -25,7 +25,11 @@ $('#search2').keyup(function () {
  
    $.getJSON('entries.json', function (data) {
    var output = '<ul class="searchresults">';
- 
+ 	   output += '<div id="update-pagination" style="float:right;">';
+	   output += '<a id="update-previous" href="#">&laquo; Newer</a>';
+	   output += '|';
+	   output += '<a id="update-next" href="#">Older &raquo;</a>';
+	   output += '</div>';
    $.each(data.entries, function(key, val) {
       if (val.text.search(myExp) !== -1 || val.title.search(myExp) !== -1) {
       console.log(val);
