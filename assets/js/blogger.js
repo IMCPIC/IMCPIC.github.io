@@ -12,7 +12,6 @@ function getposts(){
 
 				$("#blog").append(output);
 				$('#blog').paginate({itemsPerPage: 2});
-				$('#searchresults').paginate({itemsPerPage: 4});
       	});
     });
 }
@@ -50,7 +49,7 @@ $('#search2').keyup(function () {
       if (found==1) {
       $('#update').removeClass('update-hidden');
       $('#update').html(output);
-      
+      $('#searchresults').paginate({itemsPerPage: 4});
       }
       else {
           $('#update').addClass('update-hidden');
