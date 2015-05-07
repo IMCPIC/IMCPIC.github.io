@@ -17,7 +17,26 @@ function getposts(){
 }
 
 
-$(window).load(function(){
+$('#search2').keyup(function() {//when key is pressed in search bar
+ var searchTerm = $(this).val(); //val of search bar
+ var myExp = new RegExp(searchTerm, "i"); //regular experation
+
+ $.getJSON('entries.json', function(data){//get the json file
+
+  var output = "<ul id='result'>";
+  $.each(data, function(key, val){
+   if(val.title.search(myExp) != -1){//search for the data in the json file
+    output += '<li>';
+    output += '<h3>' +val.title+ '</h3>';
+    output += '</li>';
+   }
+  });//end each
+  output += "</ul>";
+  $('#update').html(output);//output result to the update div
+ });
+});
+
+/*$(window).load(function(){
         $('#search2').keyup(function(){
             var searchField = $('#search2').val();
             var regex = new RegExp(searchField, "i");
@@ -42,4 +61,4 @@ $(window).load(function(){
               $('#results').html(output);
             }); 
         });
-      });
+      });*/
