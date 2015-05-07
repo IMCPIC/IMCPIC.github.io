@@ -16,7 +16,7 @@ function getposts(){
     });
 }
 
-$('#search2').keyup(function () { 
+$('#search2','#search1').keyup(function () { 
     var searchField = $('#search2').val();
     if (searchField.length){        
     var myExp = new RegExp(searchField, "i");
