@@ -24,12 +24,6 @@ $('#search2').keyup(function () {
     var found = 0;
  
    $.getJSON('entries.json', function (data) {
-   	output += '<div id="searchresults-pagination" style="float:right;">';
-	  output += '<a id="searchresults-previous" href="#">&laquo; Newer</a>';
-	  output += ' | ';
-	  output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
-      output += '</div>';
-      output += '<br>';
    var output = '<ul class="searchresults" id="searchresults">';
  	   
    $.each(data.entries, function(key, val) {
@@ -46,7 +40,12 @@ $('#search2').keyup(function () {
    });
       output += '</ul>';
 
-      
+      output += '<div id="searchresults-pagination" style="float:right;">';
+	  output += '<a id="searchresults-previous" href="#">&laquo; Newer</a>';
+	  output += ' | ';
+	  output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
+      output += '</div>';
+      output += '<br>';
 
       if (found==1) {
       $('#update').removeClass('update-hidden');
