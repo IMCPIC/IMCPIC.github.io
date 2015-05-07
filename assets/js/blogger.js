@@ -15,7 +15,7 @@ function getposts(){
       	});
     });
 }
-
+//
 $('#search2').keyup(function () { 
     var searchField = $('#search2').val();
     if (searchField.length){        
@@ -24,12 +24,7 @@ $('#search2').keyup(function () {
  
    $.getJSON('entries.json', function (data) {
    var output = '<ul class="searchresults" id="searchresults">';
- 	   output += '<div id="searchresults-pagination" style="float:right;">';
-	  output += '<a id="searchresults-previous" href="#">&laquo; Newer</a>';
-	  output += ' | ';
-	  output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
-      output += '</div>';
-      output += '<br>';
+ 	   
    $.each(data.entries, function(key, val) {
       if (val.text.search(myExp) !== -1 || val.title.search(myExp) !== -1) {
       console.log(val);
@@ -44,7 +39,12 @@ $('#search2').keyup(function () {
    });
       output += '</ul>';
 
-      
+      output += '<div id="searchresults-pagination" style="float:right;">';
+	  output += '<a id="searchresults-previous" href="#">&laquo; Newer</a>';
+	  output += ' | ';
+	  output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
+      output += '</div>';
+      output += '<br>';
 
       if (found==1) {
       $('#update').removeClass('update-hidden');
