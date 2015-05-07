@@ -36,7 +36,7 @@ $.fn.paginate = function(options) {
     var Paginator = function(self, options) {
         
         var defaults = {
-            itemsPerPage: 10,
+            itemsPerPage: 1,
             selector: {
                 next: self.selector+'-next',
                 previous: self.selector+'-previous',
