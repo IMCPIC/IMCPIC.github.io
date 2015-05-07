@@ -49,7 +49,7 @@ $.fn.paginate = function(options) {
         var options = $.extend(defaults, options);
         var currentPage = 1;
         var numberOfPages = 1;
-        var numberOfItems = 0;
+        var numberOfItems = 1;
         
         var init = function() {
             numberOfItems = self.children().size();
