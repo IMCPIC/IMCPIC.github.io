@@ -44,7 +44,7 @@ $('#search2').keyup(function () {
 	  output += '|';
 	  output += '<a id="update-next" href="#">Older &raquo;</a>';
       output += '</div>';
-      $('#update').paginate({itemsPerPage: 4});
+
       if (found==1) {
       $('#update').removeClass('update-hidden');
       $('#update').html(output);
@@ -52,7 +52,7 @@ $('#search2').keyup(function () {
       else {
           $('#update').addClass('update-hidden');
       }
- 
+ 	  $('#update').paginate({itemsPerPage: 4});
 });
     } else {
       $('#update').addClass('update-hidden');
