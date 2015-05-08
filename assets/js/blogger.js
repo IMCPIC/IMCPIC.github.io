@@ -11,19 +11,18 @@ function getposts(){
 			  output+="</div>";
 
 				$("#blog").append(output);
-				$('#blog').paginate({itemsPerPage: 1});
+				$('#blog').paginate({itemsPerPage: 2});
       	});
     });
 }
 
 
 
-$(document).ready(function() {
+$(document).ready(function() 
             
     $("search2").focus();
     $("#search2").keydown(function(){
         $("#search1").focus();
-        $('#search2').addClass('searchhide-hidden');
     });
     
 
@@ -69,12 +68,14 @@ $('#search1').keyup(function () {
       $('#searchhide').addClass('searchhide-hidden');
       $('#searchhide2').addClass('searchhide-hidden');
       $('#update').html(output);
+      $('#search2').addClass('searchhide-hidden');
       $('#searchresults').paginate({itemsPerPage: 4});
       }
       else {
           $('#update').addClass('update-hidden');
           $('#searchhide').removeClass('searchhide-hidden');
           $('#searchhide2').removeClass('searchhide-hidden');
+          $('#search2').removeClass('searchhide-hidden');
       }
  	 
 });
@@ -82,5 +83,6 @@ $('#search1').keyup(function () {
       $('#update').addClass('update-hidden');
       $('#searchhide').removeClass('searchhide-hidden');
       $('#searchhide2').removeClass('searchhide-hidden');
+      $('#search2').removeClass('searchhide-hidden');
     }
 });
