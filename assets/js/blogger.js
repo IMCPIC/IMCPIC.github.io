@@ -23,6 +23,7 @@ $(document).ready(function() {
     $("search2").focus();
     $("#search2").keydown(function(){
         $("#search1").focus();
+        $('#search2').addClass('searchhide-hidden');
     });
     
 
