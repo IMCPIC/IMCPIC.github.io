@@ -69,11 +69,13 @@ $('#search1').keyup(function () {
       $('#searchhide2').addClass('searchhide-hidden');
       $('#update').html(output);
       $('#searchresults').paginate({itemsPerPage: 4});
+      $('#search2').addClass('searchhide-hidden');
       }
       else {
           $('#update').addClass('update-hidden');
           $('#searchhide').removeClass('searchhide-hidden');
           $('#searchhide2').removeClass('searchhide-hidden');
+          $('#search2').removeClass('searchhide-hidden');
       }
  	 
 });
@@ -81,5 +83,6 @@ $('#search1').keyup(function () {
       $('#update').addClass('update-hidden');
       $('#searchhide').removeClass('searchhide-hidden');
       $('#searchhide2').removeClass('searchhide-hidden');
+      $('#search2').removeClass('searchhide-hidden');
     }
 });
