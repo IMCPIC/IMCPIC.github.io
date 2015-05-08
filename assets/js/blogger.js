@@ -55,9 +55,9 @@ $('#search1').keyup(function () {
       output += '</ul>';
 
       output += '<div id="searchresults-pagination" class="update" style="float:right;">';
-	    output += '<a id="searchresults-previous" href="#">&laquo; Newer</a>';
-	    output += ' | ';
-	    output += '<a id="searchresults-next" href="#">Older &raquo;</a>';
+	    output += '<a id="searchresults-previous" href="#"><b><i class="fa fa-caret-left"></i> Newer</b></a>';
+	    output += '<b> | </b>';
+	    output += '<a id="searchresults-next" href="#"><b>Older </b><i class="fa fa-caret-right"></i></a>';
       output += '</div>';
       output += '<div class="col-sm-12" style="float:right;">';
       output += '<p></hr></p>';
