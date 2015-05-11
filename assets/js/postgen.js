@@ -23,10 +23,11 @@ $(document).ready(function () {
 function getdate(){
       var today = new Date();
       var dd = today.getDate();
-      var mm = today.getMonth();
+      var mmm = today.getMonth();
+      var mm = mmm+1
       var yyyy = today.getFullYear();
       if(mm < 10) {
-        mm = "1" + mm;
+        mm = "0" + mm;
       }
       var curr = (mm) + '/' + dd + '/' + yyyy;
       return curr;
