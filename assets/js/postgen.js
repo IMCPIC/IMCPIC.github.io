@@ -26,9 +26,9 @@ function getdate(){
       var mm = today.getMonth();
       var yyyy = today.getFullYear();
       if(mm < 10) {
-        mm = "0" + mm;
+        mm = "1" + mm;
       }
-      var curr = (mm+1) + '/' + dd + '/' + yyyy;
+      var curr = (mm) + '/' + dd + '/' + yyyy;
       return curr;
 
 }
