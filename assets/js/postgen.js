@@ -28,7 +28,7 @@ function getdate(){
       if(mm < 10) {
         mm = "0" + mm;
       }
-      var curr = mm + '/' + dd + '/' + yyyy;
+      var curr = (mm+1) + '/' + dd + '/' + yyyy;
       return curr;
 
 }
@@ -37,18 +37,18 @@ function post(){
   $("#json").append('{"entries":['  + '<br />');
   $.getJSON('entries.json', function(data) {
     $.each(data.entries, function(key, val) {
-      var single = '{"t":"' + val.t + '", "h":"' + val.h + '", "c":"' + val.c + '"}';
+      var single = '{"date":"' + val.date + '", "title":"' + val.title + '", "text":"' + val.text + '"}';
       $("#json").append(single);
       if((data.entries.length - 1) != key){
         $("#json").append(',<br />');
       } else {
         $("#json").append(',<br />');
         // new post
-        var t = getdate();
-        var h = $("input#h").val();
-        var c = $("textarea#c").val();
-        c = $("textarea#c").val().replace(/\n/g, "&lt;br&gt;");
-        var added = '{"t":"' + t + '", "h":"' + h + '", "c":"' + c + '"}';
+        var date = getdate();
+        var title = $("input#title").val();
+        var text = $("textarea#text").val();
+        text = $("textarea#text").val().replace(/\n/g, "&lt;br&gt;");
+        var added = '{"date":"' + date + '", "title":"' + title + '", "text":"' + text + '"}';
         $("#json").append(added);
         $("#json").append('<br />]}');
       }
