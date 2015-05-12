@@ -7,7 +7,7 @@ function getstories(){
 		$.each(data.list, function(key, val) {
         var output="<div id='stories' class='col-sm-12 blogpost'>";
 		    output+="<h3>" + val.resolved_title +"</h3>";
-		    output+="<h4>" + "<a href='val.resolved_url'>'"val.resolved_title"'</a>"+"</h4>";
+		    output+="<h4>" + "<a href='val.resolved_url'>val.resolved_title</a>"+"</h4>";
 		    output+="<p>" + val.excerpt +"</p>";
 		    output+="</hr>";
 			output+="</div>";
