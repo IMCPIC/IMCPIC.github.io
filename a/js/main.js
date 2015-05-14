@@ -1,15 +1,15 @@
 $(document).ready(getstories);
 function getstories(){
 
-    $.post("https://getpocket.com/v3/get",
+    /*$.post("https://getpocket.com/v3/get",
         {"consumer_key":"41123-fe4863e76b86cdd3c0382833",
             "access_token":"1f8a751f-c3e9-a29d-e897-d1756d",
             "detailType":"complete"},
         function(data,status){
-            /*console.log(JSON.stringify(data));
-        });
+            console.log(JSON.stringify(data));
+        });*/
     
-    $.getJSON('stories.json', function(data) {*/
+    $.getJSON('stories.json', function(data) {
         $.each(data.list, function(key, val) {
         var output="<div id='stories' class='col-md-4 col-sm-4 mainnews-item'>";
             output+="<a href='"+val.resolved_url+"' class='mainnews-link' data-toggle='modal' target='_blank'>";            
