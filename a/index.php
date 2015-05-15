@@ -11,10 +11,10 @@
     <meta name="author" content="Erik Richter">
 
 
-    <title>Posigrator</title>
+    <title>PrettyNeat</title>
 
-    <link rel="shortcut icon" href="img/PLogo3.png">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/PLogo3.png" />
+    <link rel="shortcut icon" href="img/PLogoIcon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/PLogoIcon.png" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,10 +26,11 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico|Comfortaa' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abel|Asap' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 
 
@@ -60,10 +61,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll float" href="#mainnews">Stories</a>
+                        <a class="page-scroll float" href="#mainnews">Read</a>
                     </li>
                     <li>
-                        <a class="page-scroll float" href="#about">Inspired</a>
+                        <a class="page-scroll float" href="#about">Inspire</a>
                     </li>
                     <li>
                         <a class="page-scroll float" href="#subscribe">Subscribe</a>
@@ -81,10 +82,10 @@
 
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading name animated zoomIn">Posigrator</div>
+                <div class="intro-heading name animated zoomIn"><a href="#mainnews" class="page-scroll">PrettyNeat</a></div>
                 <div class="mobile-logo animated zoomIn"><img src="img/PLogo3.png"></div>
-                <div class="intro-heading-3 animated zoomIn">Posigrator</div>
-                <div class="intro-heading-2 animated zoomIn">Posigrator</div>
+                <div class="intro-heading-3 animated zoomIn">PrettyNeat</div>
+                <div class="intro-heading-2 animated zoomIn">PrettyNeat</div>
                 <div class="intro-lead-in animated fadeInUp"><a href="#mainnews" class="page-scroll lead-in-link">Daily aggregated news stories<br>with a positive and inspirational twist</a></div>
                 <!--<div class="note">
                 <i class="fa fa-angle-down fa-4x chev"></i>
@@ -94,8 +95,8 @@
                 <div class="intro-lead-in-3">Daily aggregated news stories<br>with a positive and inspirational twist</div>
                 <div class="mobile-button animated fadeInUp">
                     <ul class="mobile-button-list">
-                    <li><a href="#mainnews" class="page-scroll btn float">Stories</a></li>
-                    <li><a href="#about" class="page-scroll btn float">Inspired</a></li>
+                    <li><a href="#mainnews" class="page-scroll btn float">Read</a></li>
+                    <li><a href="#about" class="page-scroll btn float">Inspire</a></li>
                     <li><a href="#subscribe" class="page-scroll btn float">Subscribe</a></li>
                     </ul>
                 </div>
@@ -104,12 +105,12 @@
     </header>
 
     <!-- Stories Grid Section -->
-    <section id="mainnews" class="bg-light-gray">
+    <section id="mainnews" class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">The Good Stuff</h2>
-                    <h3 class="section-subheading text-muted">Updated Daily</h3>
+                    <h2 class="section-heading">- Pretty Neat News -</h2>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
 
@@ -305,12 +306,12 @@
     </section>
 
      <!-- About Section -->
-    <section id="about">
+    <section id="about" class="bg-light-grey">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center who-is">
-                    <h2 class="section-heading">What is this all about?</h2>
-                    <h3 class="section-subheading text-muted">Have you ever watched the nightly news?</h3>
+                    <h2 class="section-heading">- Pretty Neat Story -</h2>
+                    <h3 class="section-subheading text-muted">So what's this all about?</h3>
                 </div>
             </div>
             <div class="row text-left">
@@ -353,8 +354,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Subscribe</h2>
-                    <h3 class="section-subheading text-muted">Get daily stories delivered to your Inbox!</h3>
+                    <h2 class="section-heading">- That's Pretty Neat! -</h2>
+                    <h3 class="section-subheading text-muted">We think so too! Subscribe and get the stories delivered to your inbox!</h3>
                 </div>
             </div>
             <div class="row">
@@ -368,10 +369,6 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control" placeholder="Please enter your email" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Care to say something?" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -403,8 +400,8 @@
                 <div class="mobile-nav">
                     <a href="#page-top" class="page-scroll"><img src="img/PLogoMobile.png"><a>
                         <ul class="nav-menu">
-                            <li><a href="#mainnews" class="page-scroll btn">Stories</a></li><!--
-                            --><li><a href="#about" class="page-scroll btn">Inspired</a></li><!--
+                            <li><a href="#mainnews" class="page-scroll btn">Read</a></li><!--
+                            --><li><a href="#about" class="page-scroll btn">Inspire</a></li><!--
                             --><li><a href="#subscribe" class="page-scroll btn">Subscribe</a></li>
                         </ul>
                 </div>

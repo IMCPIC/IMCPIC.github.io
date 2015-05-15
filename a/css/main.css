@@ -52,6 +52,11 @@ h6 {
     font-weight: 300;
 }
 
+h2 {
+    font-family: 'Pacifico', cursive;
+    text-transform: none;
+}
+
 
 #about .fa {
     color: #fed136;
@@ -83,8 +88,13 @@ h6 {
     padding-top: 20px;
 }
 
-.bg-light-gray {
-    background-color: #f7f7f7;
+.bg-white {
+    background-color: #fff;
+    /*background-color: #ebf0f1;*/
+}
+
+.bg-light-grey {
+    background-color: #f9f9f9;
     /*background-color: #ebf0f1;*/
 }
 
@@ -202,7 +212,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
-    background-color: #282B31;
+    background-color: #27232B;
     background-color: rgba(0,0,0,0);
     background-color: rgba(40,43,49,0);
 
@@ -229,12 +239,12 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #282B31;
+    border-color: #27232B;
     background-color: rgba(255,255,255,.02);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #282B31;
+    background-color: #27232B;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -248,13 +258,13 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 300;
     font-size: 18px;
     letter-spacing: 1px;
-    background-color: #282B31;
+    background-color: #27232B;
     color: #fff;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    background-color: #282B31;
+    background-color: #27232B;
     color: #fed136;
 }
 
@@ -330,7 +340,7 @@ fieldset[disabled] .btn-xl.active {
     height: 40px;
     width: 100%;
     margin-top: -40px;
-    background-color: #282B31;
+    background-color: #27232B;
 }
 
 .mobile-nav ul {
@@ -389,7 +399,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .nav li a {
-        background-color: #282B31;
+        background-color: #27232B;
         background-color: rgba(255,255,255,0);
         color: #fff;
     }
@@ -443,7 +453,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         /*background-color: rgba(40,43,49,.9);*/
-        background-color: #282B31;
+        background-color: #27232B;
         /*background-color: #293e51;*/
         /*background-color: #8e9394;*/
 
@@ -461,7 +471,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-color: #282B31;
+    background-color: #27232B;
     background-image: linear-gradient(rgba(23,22,23,0.6),rgba(23,22,23,0.6)),url(../img/blowing.jpg);
         background-position: center top;
         background-repeat: none;
@@ -496,8 +506,8 @@ header {
     display: inline-block;
     margin-top: 5px;
     margin-bottom: -4px;
-    text-transform: uppercase;
-    font-family: 'Hind', sans-serif;
+    text-transform: none;
+    font-family: 'Pacifico', cursive;
     font-size: 46px;
     font-weight: 300;
     line-height: 60px;
@@ -572,7 +582,7 @@ header {
     .intro-lead-in-3 {
         display: none;
         margin-bottom: -10px;
-        font-family: 'Hind', sans-serif;
+        font-family: 'Pacifico', cursive;
         font-size: 18px;
         line-height: 40px;
     }
@@ -586,7 +596,7 @@ header {
         text-align: center;
         color: #fff;
         background-attachment: scroll;
-        background-color: #282B31;
+        background-color: #27232B;
         background-image: linear-gradient(rgba(23,22,23,0.6),rgba(23,22,23,0.6)),url(../img/blowing.jpg);
         background-position: top;
         background-repeat: none;
@@ -614,7 +624,7 @@ header {
     }
 
     header .intro-text a:hover {
-        color: #aaa;
+        color: #fec503;
     }
 
     .arrow i{
@@ -664,18 +674,18 @@ header {
 
     header .intro-text .intro-heading {
         display: inline-block;
-        font-family: 'Hind', sans-serif;
+       font-family: 'Pacifico', cursive;
         color: #fec503;
         margin-bottom: 50px;
         margin-top: 10px;
-        text-transform: uppercase;
-        font-size: 62px;
-        font-weight: 300;
+        text-transform: none;
+        font-size: 90px;
+        font-weight: 100;
         line-height: 75px;
         border: 3px solid #fff;
         padding-top: 15px;
-        padding-bottom: 5px;
-        padding-left: 25px;
+        padding-bottom: 20px;
+        padding-left: 20px;
         padding-right: 25px;
 
     }
@@ -688,7 +698,7 @@ header {
         text-align: center;
         color: #fff;
         background-attachment: scroll;
-        background-color: #282B31;
+        background-color: #27232B;
         background-image: linear-gradient(rgba(23,22,23,0.6),rgba(23,22,23,0.6)),url(../img/blowing.jpg);
         background-position: center center;
         background-repeat: none;
@@ -726,12 +736,15 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-    margin-bottom: 75px;
-    text-transform: none;
-    font-family: 'Merriweather', serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: none;
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 400;
+            color: #f9f9f9;
+
 }
 
 .about-heading {
@@ -752,8 +765,18 @@ section#about {
 @media(min-width:690px) {
     section h2.section-heading {
             margin-top: 0;
-            font-size: 50px;
+            font-size: 65px;
         }
+    section h3.section-subheading {
+            display: inline-block;
+            margin-bottom: 75px;
+            text-transform: none;
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 400;
+            color: #777;
+}
 }
 
 @media(min-width:768px) {
@@ -789,18 +812,66 @@ section#about {
     margin: 0 0 15px;
 }
 
+
+
+
+#mainnews .color h4 {
+    font-family: 'Raleway', sans-serif;
+   
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    text-transform: none;
+}
+
+#mainnews a{
+    text-decoration: none;
+}
+
+
 #mainnews .mainnews-item .mainnews-link {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
+    margin-bottom: -20px;
+    max-width: 100%;
+
 }
+
+#mainnews .title {
+    top: 0;
+    bottom: 0;
+}
+
+#mainnews .storyimg {
+    position: absolute;
+    object-fit:cover;
+    width: 100%;
+    border:10px solid rgba(40, 43, 49, 0);
+}
+
+#mainnews .color {
+    position: absolute;
+    padding: 40px;
+    padding-top: 35px;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(40, 43, 49, .8);
+    object-fit: cover;
+    width: 100%;
+    border:10px solid rgba(255, 255, 255, 1);
+    border-radius: 20px;
+}
+
 
 #mainnews .mainnews-item .mainnews-link .mainnews-hover {
     display: none;
+    position: relative;
     width: 100%;
     height: 100%;
     opacity: 0;
+    border:3px solid rgba(255, 255, 255, 1);
+    border-radius: 19px;
     background: rgba(254,209,54,.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
@@ -819,8 +890,14 @@ section#about {
     margin-top: -12px;
     padding: 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color: #000;
+}
+
+#mainnews .excerpt {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 10px;
 }
 
 #mainnews .mainnews-item .mainnews-link .mainnews-hover .mainnews-hover-content i {
@@ -833,30 +910,67 @@ section#about {
 }
 
 #mainnews .mainnews-item .mainnews-caption {
-    margin: 0 auto;
-    padding: 25px;
-    max-width: 400px;
+    margin-top: 20px;
+    
+    max-width: 100%;
+    
     text-align: center;
-    background-color: #fff ;
+    background-color: #fff;
+}
+#mainnews h2 {
+    color: #000;
 }
 
 #mainnews .mainnews-item .mainnews-caption h4 {
     margin: 0;
+    
+    font-size: 25px;
+    color: #000;
     text-transform: none;
 }
 
 #mainnews .mainnews-item .mainnews-caption p {
     margin: 0;
-    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-style: italic;
 }
 
 .img-responsive {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
+@media(min-width: 300){
+    #mainnews .mainnews-item .mainnews-caption {
+        margin-top: -15px;
+        
+    }
+}
+
+@media(min-width: 767px){
+    .img-responsive {
+    width: 300px;
+    height: 300px;
+    }
+    #stories {
+        padding: 0px;
+        padding-bottom: -20px;
+    }
+    #mainnews .mainnews-item .mainnews-caption {
+        margin-top: -15px;
+        
+    }
+}
+
+@media(min-width:767px) {
+    #mainnews .color h4 {
+    font-size: 22px;
+    }
+    #mainnews h2 {
+    font-size: 70px;
+}
+}
 
 @media(min-width:767px) {
     #mainnews .mainnews-item {
@@ -875,10 +989,38 @@ section#about {
     }
 }
 
+@media(min-width:992px) {
+    #mainnews .color h4 {
+    font-size: 28px;
+    }
+    #mainnews .excerpt {
+    font-size: 19px;
+    }
+
+}
+
+@media(min-width:1200px){
+    .img-responsive {
+    width: 350px;
+    height: 350px;
+}
+#mainnews .excerpt {
+    font-size: 23px;
+}
+#mainnews .color {
+    padding: 40px;
+    padding-top: 50px;
+}
+#mainnews .color h4 {
+    font-size: 33px;
+    }
+
+}
+
 /* SUBSCRIBE */
 
 section#subscribe {
-    background-color: #282B31;
+    background-color: #27232B;
     background-position: center;
     background-repeat: no-repeat;
 }
